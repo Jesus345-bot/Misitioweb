@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Principal</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        header {
+            background-color: #10375c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f3c623;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Proyecto JavaScript</h1>
+</header>
+
+<nav>
+    <button onclick="cargar('cajas.html')">Cajas</button>
+    <button onclick="cargar('votacion.html')">Votación</button>
+    <button onclick="cargar('sueldo.html')">Sueldo</button>
+    <button onclick="cargar('ciclos.html')">Ciclos</button>
+    <button onclick="cargar('arreglos.html')">Arreglos</button>
+</nav>
+
+<iframe id="visor"></iframe>
+
+<script>
+function cargar(pagina) {
+    document.getElementById("visor").src = pagina;
+}
+</script>
+
+</body>
+</html>
